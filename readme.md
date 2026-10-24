@@ -2,6 +2,8 @@
 
 ![Model Framework](MAPSAM.png)
 (a) Overall architecture of the proposed MAP-SAM, which employs a dual-branch network comprising a CNN and SAM. Given a support image $I^s$ and a query image $I^q$, the CNN branch first utilizes the Adaptive Cross-Level Prototype Generator (ACPG) to extract cross-level global and local prototypes. These prototypes, together with the query features, are then fed into the Multi-Granularity Prototype Fusion Module (MGPFM) to generate robust CNN-based query predictions. Next, an Automated Prompt Generation Module comprising the Adaptive Dual-Boundary Prompt Generation (ADBPG) (b) and Uncertainty-Aware Prompt Generation (UAPG) (c) modules converts the CNN predictions into sparse and dense prompts to guide SAM's query predictions. Finally, mutual knowledge distillation is performed between the CNN and SAM outputs.
+![Model Framework](AFFM.png)
+The flowchart of the proposed adaptive feature fusion module.
 
 ### Abstract
 
