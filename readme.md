@@ -46,7 +46,7 @@ Preprocessed data and supervoxels can be downloaded via [RPT](https://github.com
 
 1. Compile `./supervoxels/felzenszwalb_3d_cy.pyx` with cython (`python ./supervoxels/setup.py build_ext --inplace`) and run `./supervoxels/generate_supervoxels.py` 
 2. Download pre-trained ResNet-101 weights [vanilla version](https://download.pytorch.org/models/resnet101-63fe2227.pth) or [deeplabv3 version](https://download.pytorch.org/models/deeplabv3_resnet101_coco-586e9e4e.pth) and put them in the checkpoint folder, then replace the absolute path in the code `./models/encoder.py`. 
-3. Download the pretrained SAM-b weights [vit_b(default)](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) and put them in the checkpoint folder, then replace the absolute path in the code `./Model/sam/bulid_sam.py`.
+3. Download the pre-trained SAM-b weights [vit_b (default)](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth) and put them in the checkpoint folder, then replace the absolute path in the code `./Model/sam/bulid_sam.py`.
 4. Run `./script/train.sh` 
 
 ### Inference
